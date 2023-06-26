@@ -127,3 +127,9 @@ var con = mysql.createConnection({
 // git commit -m "Add existing project files to Git"
 // git remote add origin https://github.com/jicsoninfo/nodeexpress.git
 // git push -u -f origin master
+
+
+//git add .
+//git commit -m "message"
+//git branch
+//git push origin master
