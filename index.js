@@ -133,3 +133,6 @@ var con = mysql.createConnection({
 //git commit -m "message"
 //git branch
 //git push origin master
+
+
+//npx express-generator --view=ejs expressgen

@@ -15,6 +15,27 @@ const express = require('express');
 const app = express();
 const router = express.Router();
 
+
+var path = require('path');
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'ejs'); //this require npm install ejs
+
+// const myLogger = function (req, res, next) {
+//     console.log('Global Middelware')
+//     next()
+//   }
+  
+// app.use(myLogger);
+
+//   app.get('/', (req, res) => {
+//     res.send('Hello World!')
+//   });
+
+//router.use(myLogger);
+// router.get('/', (req, res) => {
+//     res.send('Hello World!')
+//   });
+
 app.use('/', router);
 
 // router.get('/home', (req, res) => {
