@@ -1,4 +1,4 @@
-
+const {customercontroller} = require('../controllers')
 // module.exports = function(router){
 //     router.get('/login', (req, res) =>{
 //         res.send('This is login router');
@@ -30,18 +30,29 @@ module.exports = function(router){
         authJwt.myLoggerThree,
         authJwt.myLoggerTwo,
     ],(req, res) =>{
-        res.send('.......This is login three router two through middelware.......');
+        //res.send('.......This is login three router two through middelware.......');
+        res.render('index');
     });
 
+
+    // router.get('/loginFour/:userID', [
+    //     authJwt.myLogger,
+       
+    // ],(req, res) =>{
+    //     //res.send('.......This is login Four router through middelware.......');
+    //     //res.send(req.params);
+    //     //return res.redirect('/profile');
+    //     res.render('index');
+    // });
 
     router.get('/loginFour/:userID', [
         authJwt.myLogger,
        
-    ],(req, res) =>{
-        //res.send('.......This is login Four router through middelware.......');
-        //res.send(req.params);
-        //return res.redirect('/profile');
-        res.render('index');
-    });
+    ], //(req, res) =>{
+        customercontroller.customerindex
+   // }
+
+    );
+    
 
 }
