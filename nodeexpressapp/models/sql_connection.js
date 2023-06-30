@@ -10,17 +10,19 @@ var con = mysql.createConnection({
 
 
   customer_data = function() {
-    con.connect(function(err) {
-    if (err) throw err;
-    console.log("Connected!");
-    var sql = "SELECT * FROM customers";
-    con.query(sql, function (err, result) {
-        if (err) throw err;
-        console.log(result);
-        //return result;
-    });
+    var test = "you are in model";
+    return test;
+  //   con.connect(function(err) {
+  //   if (err) throw err;
+  //   console.log("Connected!");
+  //   var sql = "SELECT * FROM customers";
+  //   con.query(sql, function (err, result) {
+  //       if (err) throw err;
+  //       console.log(result);
+  //       //return result;
+  //   });
 
-   });
+  //  });
 }
 
    const sql_connection  = {
