@@ -1,8 +1,10 @@
 const {sql_connection} = require('../models');
+
 customerindex = function(req, res){
-    cus_data = sql_connection.customer_data ;
-    console.log(cus_data);
-    res.render('index');
+    
+    var cus_data = sql_connection.customer_data();
+    console.log('data ',cus_data);
+    res.render('index', {'cus_data':cus_data});
     //console.log('you are in controller');
 }
 

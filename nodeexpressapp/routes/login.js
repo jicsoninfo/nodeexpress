@@ -49,8 +49,8 @@ module.exports = function(router){
         authJwt.myLogger,
        
     ], //(req, res) =>{
-        customercontroller.customerindex
-   // }
+        customercontroller.customerindex,
+    //}
 
     );
     
