@@ -136,3 +136,4 @@ var con = mysql.createConnection({
 
 
 //npx express-generator --view=ejs expressgen
+//node --watch nodeexpressapp/app.js

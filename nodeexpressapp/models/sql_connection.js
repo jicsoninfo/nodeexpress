@@ -18,10 +18,12 @@ var con = mysql.createConnection({
     var sql = "SELECT * FROM customers";
     cust_data = con.query(sql, function (err, result) {
         if (err){
-          throw err;
+          //throw err;
+          return res.status(200).send('Error getting data');
         }else{
-          console.log(result)
-          //return res.send(result);          
+          //console.log(result)
+          // return res.(result);
+          return res.send(result);          
         } 
     });
    });
